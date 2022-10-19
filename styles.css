@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: white;
+}
+
+form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+form > *{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+form > h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form > input{
+    border-radius: 5px;
+    border: 1px solid rgb(161, 160, 160);
+    height: 32px;
+    padding: 5px;
+    margin-bottom: 24px;
+    color: gray;
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+}
+
+form > input[type=number]:focus{
+    outline: 1px solid rgb(209, 208, 207);     /* oranges! yey */
+}
+
+label{
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+}
+
+#btnCalc{
+    background-color: rgb(0, 162, 255);
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 32px;
+    cursor: pointer;
+    font-size: larger;
+    margin-bottom: 18px;
+}
+
+#btnCalc:hover{
+    background-color: rgb(17, 114, 170);
+}

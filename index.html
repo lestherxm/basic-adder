@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="form">
+            <h1>🧮</h1>
+            <label for="numOne">Number One</label>
+            <input id="numOne" type="number" placeholder="Insert the first number">
+            <label for="numTwo">Number Two</label>
+            <input id="numTwo" type="number" placeholder="Insert the second number">
+            <!-- 
+                Por defualt, al trabajar con formularios al último botón se le asigna la propidedad
+                type="submit", lo cual hace que se recarge la pagina, si cambiamos eso podemos ejecutar
+                un metodo/funcion sin la necesidad de utilizar el metodo e.preventDefault en dicha funcion a ejectuar
+            -->
+            <button type="button" id="btnCalc">Calculate</button>
+            <label for="result">Result</label>
+            <input id="result" type="number" placeholder="0" disabled>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
